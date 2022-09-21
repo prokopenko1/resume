@@ -11,11 +11,40 @@ $(document).ready(function(){
         evt.preventDefault();
         window.open(evt.target.href, '_blank');
     });
+
 // ховер для карт
-$( ".card" ).hover(function() {
-   $( this ).fadeOut( 1000 );
-   $( this ).fadeIn( 1000 );
+$( ".card-img-top" ).hover(function() {
+  $(this).css("opacity","0.3");
+  $(this).css("transition","all 1s ease 0s");
+    },function(){
+  $(this).css("opacity","1");
+  $(this).css("transition","all 1s ease 0s");
  });
+
+// плавный скрол
+$(function (){   
+    $("#back-top").hide();
+   
+    $(window).scroll(function (){
+      if ($(this).scrollTop() > 500){
+        $("#back-top").fadeIn();
+      } else{
+        $("#back-top").fadeOut();
+      }
+    });
+     
+    $("#back-top a").click(function (){
+      $("body,html").animate({
+        scrollTop:0
+      }, 800);
+      return false;
+    });
+  });  
+
+
+  $(".navbar-brand").mouseover(function() { $(this).addClass("tr-over"); });
+  $(".navbar-brand").mouseout(function() { $(this).removeClass("tr-over"); });
+
 
 // переключатель языка
 //  $('.rus').on('click', function() {

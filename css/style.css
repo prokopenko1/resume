@@ -1,8 +1,8 @@
-#offcanvasDarkNavbar {
+/* #offcanvasDarkNavbar {
     background: url('../jpg/body.png') no-repeat center center fixed;
     background-size: cover;
     opacity: 80%;
-}
+} */
 
 /* фон карты */
 body {
@@ -15,12 +15,13 @@ body {
   background: none;
   border: 4px solid  yellow;
   border-radius: 20px 0 20px 0;
+  
 }
 div .photoName {
   height: 70%;
     margin-top: 90px;
     /* background-size: cover; */
-    /* background: url('../jpg/body.png') no-repeat center fixed; */
+    /* background: url('../jpg/1516264669525.jpg') no-repeat center ; */
     /* background-size: 100%; */
     color: azure;
     /* border-left: 3px solid  yellow;
@@ -60,5 +61,15 @@ div .photoName {
   }
   .loader .preloader {
   display: none;
+  color: #fff0ff;
     }
- 
+ p {
+  text-align: justify;
+ }   
+
+ /* стиль при наведении */
+ .tr-over {
+  background-color:azure;
+  
+  
+}
