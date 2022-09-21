@@ -18,32 +18,32 @@ $( ".card" ).hover(function() {
  });
 
 // переключатель языка
- $('.rus').on('click', function() {
-      var r = $('.localization').each(function() {
-         var el = $(this);
-         var key = (el.attr('caption'));
-         el.text(rus[key]);
-      });
-   });
+//  $('.rus').on('click', function() {
+//       var r = $('.localization').each(function() {
+//          var el = $(this);
+//          var key = (el.attr('caption'));
+//          el.text(rus[key]);
+//       });
+//    });
 
 
-   $('.eng').on('click', function() {
-      var r = $('.localization').each(function() {
-         var el = $(this);
-         var key = (el.attr('caption'));
-         el.text(eng[key]);
-      });
-   });
+//    $('.eng').on('click', function() {
+//       var r = $('.localization').each(function() {
+//          var el = $(this);
+//          var key = (el.attr('caption'));
+//          el.text(eng[key]);
+//       });
+//    });
 
 
 
-   var rus = {
-      test: 'тест',
-      name: 'имя'
-   };
-   var eng = {
-      test: 'test',
-      name: 'name'
-   };
+//    var rus = {
+//       test: 'тест',
+//       name: 'имя'
+//    };
+//    var eng = {
+//       test: 'test',
+//       name: 'name'
+//    };
   });
 
