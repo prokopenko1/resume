@@ -1,0 +1,58 @@
+#offcanvasDarkNavbar {
+    background: url('../jpg/body.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 80%;
+}
+
+/* фон карты */
+.card {
+  background: url('../jpg/body.png') no-repeat center center fixed;
+  background-size: cover;
+  color: azure;
+  
+}
+div .photoName {
+    margin-top: 90px;
+    background-size: cover;
+    background: url('../jpg/body.png') no-repeat center fixed;
+    /* background-size: 100%; */
+    color: azure;
+    border-left: 3px solid  yellow;
+    border-bottom: 3px solid  yellow;
+    
+}
+.photoName img {
+     border-radius: 50%;
+     border-color:   rgb(99, 96, 96);
+    /* box-shadow: 10px 7px 5px rgb(99, 96, 96); */
+     filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
+    border-style: solid;
+    border-width: 5px;
+}
+/* прелоадер */
+.preloader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: black;
+    z-index: 100000;
+  }
+ 
+  .preloader_image {
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: url('../jpg/giphy.gif') no-repeat 50% 50%;
+    background-size: 200px;
+  }
+  .loader .preloader {
+  display: none;
+    }
+ 

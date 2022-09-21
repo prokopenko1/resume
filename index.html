@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My life</title>
+</head>
+<body>
+    <!-- прелоадер -->
+
+    <!-- <div class="preloader">
+        <div class="preloader_image"></div>
+      </div> -->
+    <!-- навиганция -->
+    <nav class="navbar navbar-dark bg-dark fixed-top shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Евгений Прокопенко</a>
+          <a class="navbar-brand" href="#"><img src="jpg/facebook.svg" width="45" height="45" alt="ссылка профиля facebook"></a>
+          <a class="navbar-brand" href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE-167082249/"><img src="jpg/inkedin.svg" width="35" height="35" alt="ссылка профиля linkedin"></a>
+          <!-- бургер -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Обо мне</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Обо мне</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Нывыки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Хобби</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Связаться со мной</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Моя верстка
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" data-newwindow href="https://prokopenko1.github.io/projekt2/index.html" >Первая работа</a></li>
+                    <li> 
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Скоро появится:)</a></li>
+                    <li> 
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Скоро появится:)</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Скоро появится:)</a></li>
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- контент профиля -->
+    <div class="container-fluid"> 
+        <div class="row ">
+            <div class="col-12 photoName  text-center">
+                <img src="jpg/photo_1.jpg" width=30%  alt="">
+                <h2>Привет! Меня зовут Евгений</h2>
+            </div>
+        </div>
+        <!-- джамбатрон -->
+        <div class="mt-3">
+          <h2>Example of Jumbotron</h2>
+          <div class="mt-4 p-5 bg-dark text-white rounded">
+            <h1>Немного о себе</h1> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+          </div>
+        </div>
+        <!-- навыки -->
+        <div class="row text-center mt-5">
+        <h2>Мои навыки</h2>
+        </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+           
+            <div class="col">
+              <div class="card">
+                <img src="jpg/Frontend.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FrontEnd</h5>
+                  <p class="card-text">HTML, CSS, JavaScript.<br> jQuery, Bootstrap, GitHub.
+                    <br>Начал изучать React.js.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="jpg/driver.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Вождение</h5>
+                  <p class="card-text">Водительское удостоверение(категории):<br> A,  B, C, C<sub>1</sub> <br> Опыт вождениия более 10лет.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="jpg/language.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Знание языков</h5>
+                  <p class="card-text">Украинский - родной язык. <br> Русский - второй родной язык. <br> Английский(изучаю) - beginner 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- джамбатрон -->
+        <div class="mt-3">
+          <h2>Example of Jumbotron</h2>
+          <div class="mt-4 p-5 bg-dark text-white rounded">
+            <h1>Немного о себе</h1> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+          </div>
+        </div>
+          <!-- хобби -->
+          <div class="row text-center mt-5">
+            <h2>Хобби</h2>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+             <div class="col">
+              <div class="card">
+                <img src="jpg/sushi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Японская кухня</h5>
+                  <p class="card-text">Кто не любит японскую кухню?) Вот и я о том же. В свободное время, на праздники и в обычное время
+                    мне нравится готовить суши и роллы. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="jpg/daiving.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Дайвинг</h5>
+                  <p class="card-text">Побывавши на море или озере, думаю,  каждый из нас брал маску 
+                    и пытался  что-то разглядеть под водой.
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="jpg/bike.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Путишествие</h5>
+                  <p class="card-text">Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествме!
+                    Простая прогулка - это путешествие!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+      </div>
+    </nav>
+    <script src="js/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
