@@ -14,7 +14,10 @@ body {
     background: none;
     border: 4px solid;
     border-radius: 25px 0 20px 0;
-     background: url('../jpg/body.png') no-repeat center ;
+    
+    min-height: 100%;
+     background: url('../jpg/body.png') no-repeat;
+     background-size: cover;
     border-color:   rgb(69, 175, 207);
    filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
    border-width: 5px;
@@ -23,7 +26,7 @@ body {
 div .photoName {
     
     margin-top: 90px;
-    /* background-size: cover; */
+    background-size: cover;
     background: url('../jpg/body.png') no-repeat center ;
     /* background-size: 100%; */
     color: azure;  

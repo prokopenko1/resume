@@ -18,7 +18,10 @@
     <!-- навиганция -->
     <nav class="navbar navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Евгений Прокопенко</a>
+      
+<input class='rus' type=button value='rus'>
+<input class='eng' type=button value='eng'>
+<input class='ua' type=button value='ua'>
           
           <a class="navbar-brand wow pulse" data-wow-iteration="5" href="mailto:prokopenkoevgeniy123@gmail.com"><img src="jpg/email.svg" width="30" height="30" alt="ссылка профиля facebook"></a>
           <a class="navbar-brand wow pulse" data-wow-iteration="5" href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE-167082249/"><img src="jpg/linkedinn.svg" width="30" height="30" alt="ссылка профиля linkedin"></a>
@@ -37,10 +40,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Обо мне</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">Нывыки</a>
+                  <a class="nav-link localization" caption='mySkills' aria-current="page" href="#">Мои нывыки</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Хобби</a>
+                  <a class="nav-link localization" caption='hob' href="#">Хобби</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Связаться со мной</a>
@@ -77,22 +80,22 @@
         <div class="row  djambaRemow ">
             <div class="col-12 photoName text-center">
                 <img src="jpg/photo_1.jpg" class=" wow bounceIn mt-2" width=30%  alt="">
-                <h2 class="mt-3 wow bounceIn">Привет! Меня зовут Евгений</h2>
+                <h2 class="mt-3 wow bounceIn localization" caption='name'>Привет! Меня зовут Евгений</h2>
             </div>
         </div>
         <!-- джамбатрон -->
         <div class=" mt-5">
-          <h2>Жизненный опыт</h2>
+          <h2 class="localization" caption='life'>Жизненный опыт</h2>
           <div class="mt-4 p-4 bg-dark text-white rounded djambaRemow borerStylejambatron">
-            <h1>Немного о себе</h1> 
-            <p>Учиться и открывать для себя что-то новое никогда не поздно! Время летит так, что можно и не понять  что произошло. В детстве я мечтал стать программистом, но пошел в юриспруденцию. Эта работа мне не приносила удовольствия, и я решил осуществить свою детскую мечту и попробовать себя в IT. Приглянулась специальность фронтендера. Постепенно начал изучать верстку,  JavaScript , фрейморк Bootstrap и библиотеку jQuery. 
+            <h1 class="localization" caption='aboutMe'>Немного о себе</h1> 
+            <p class="localization" caption='infoOne'>Учиться и открывать для себя что-то новое никогда не поздно! Время летит так, что можно и не понять  что произошло. В детстве я мечтал стать программистом, но пошел в юриспруденцию. Эта работа мне не приносила удовольствия, и я решил осуществить свою детскую мечту и попробовать себя в IT. Приглянулась специальность фронтендера. Постепенно начал изучать верстку,  JavaScript , фрейморк Bootstrap и библиотеку jQuery. 
               Технологии идут вперед и приходится пыхтеть. На даный момент изучаю React.js.</p> 
           </div>
         </div>
         <!-- навыки -->
         
         <div class="row text-center mt-5">
-        <h2 class="wow bounceIn">Мои навыки</h2>
+        <h2 class="wow bounceIn localization" caption='mySkills'>Мои навыки</h2>
         </div>
           <div class="row row-cols-1 row-cols-md-4 g-4 mt-2 djambatron  ">
            
@@ -101,7 +104,7 @@
                 <img src="jpg/Frontend.png" class="card-img-top djambaRemow" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">FrontEnd</h5>
-                  <p class="card-text">HTML, CSS, JavaScript, GitHub.<br> jQuery, Bootstrap, GitHub.
+                  <p class="card-text localization" caption='frontEnd'>HTML, CSS, JavaScript, GitHub.<br> jQuery, Bootstrap, GitHub.
                     <br>Начал изучать React.js.
                   </p>
                 </div>
@@ -140,25 +143,25 @@
           </div>
            <!-- джамбатрон -->
         <div class="mt-5">
-          <h2>Поговорим о хобби</h2>
+          <h2 class="localization" caption='hobbies'>Поговорим о хобби</h2>
           <div class="mt-4 p-4 bg-dark text-white rounded djambaRemow borerStylejambatron">
-            <h1>Чем я занимаюсь в свободное время</h1> 
-            <p>У каждого из нас есть свое любимое занятие,  и может быть даже не одно. Идеальный вариант, когда работа и интересы совпадают, но это не всегда так. В свое свободное время я путешествую. 
+            <h1 class="localization" caption='whatIdo'>Чем я занимаюсь в свободное время</h1> 
+            <p class="localization" caption='whatDoing'>У каждого из нас есть свое любимое занятие,  и может быть даже не одно. Идеальный вариант, когда работа и интересы совпадают, но это не всегда так. В свое свободное время я путешествую. 
               Это не всегда какая-то новая страна. Учитывая нынешнюю «ОБСТАНОВКУ» это практически невозможно, но жизнь на этом не останавливается.  Мне нравится японская кухня ,и я решил попробовать сам что-то приготовить) и получилось.  Экстремальные виды спорта приносят уйму эмоций, и хочется  еще, и еще). Это и стало одним из вдохновений сверстать сайт в этом направлении.  Надеюсь мое новое влечение станет моей новой работой). 
               Все преграды преодолимы! Главное – ЖЕЛАНИЕ.</p> 
           </div>
         </div>
           <!-- хобби -->
           <div class="row text-center mt-5">
-            <h2>Хобби</h2>
+            <h2 class="localization" caption='hob'>Хобби</h2>
           </div>
           <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
              <div class="col">
               <div class="card">
                 <img src="jpg/sushi.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Японская кухня</h5>
-                  <p class="card-text">Кто не любит японскую кухню?) Вот и я о том же. В свободное время, на праздники и в обычное время
+                  <h5 class="card-title localization" caption='japon'>Японская кухня</h5>
+                  <p class="card-text localization" caption='japonKitchen'>Кто не любит японскую кухню?) Вот и я о том же. В свободное время, на праздники и в обычное время
                     мне нравится готовить суши и роллы. </p>
                 </div>
               </div>
@@ -167,8 +170,8 @@
               <div class="card">
                 <img src="jpg/daiving.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Дайвинг</h5>
-                  <p class="card-text">Побывавши на море или озере, думаю,  каждый из нас брал маску 
+                  <h5 class="card-title localization" caption='daiving'>Дайвинг</h5>
+                  <p class="card-text localization" caption='dip'>Побывавши на море или озере, думаю,  каждый из нас брал маску 
                     и пытался  что-то разглядеть под водой.
                     </p>
                 </div>
@@ -178,8 +181,8 @@
               <div class="card">
                 <img src="jpg/piramid.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Путишествие</h5>
-                  <p class="card-text">Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествием!
+                  <h5 class="card-title localization" caption='travel'>Путишествие</h5>
+                  <p class="card-text localization" caption='goTravel'>Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествием!
                     
                   </p>
                 </div>
