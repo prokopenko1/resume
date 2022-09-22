@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 // ховер для карт
 $( ".card-img-top" ).hover(function() {
-  $(this).css("opacity","0.3");
+  $(this).css("opacity","0.6");
   $(this).css("transition","all 1s ease 0s");
     },function(){
   $(this).css("opacity","1");
@@ -26,7 +26,7 @@ $(function (){
     $("#back-top").hide();
    
     $(window).scroll(function (){
-      if ($(this).scrollTop() > 500){
+      if ($(this).scrollTop() > 1000){
         $("#back-top").fadeIn();
       } else{
         $("#back-top").fadeOut();
@@ -36,14 +36,17 @@ $(function (){
     $("#back-top a").click(function (){
       $("body,html").animate({
         scrollTop:0
-      }, 800);
+      }, 1000);
       return false;
     });
   });  
 
-
+    // наведение на иконки хедера
   $(".navbar-brand").mouseover(function() { $(this).addClass("tr-over"); });
   $(".navbar-brand").mouseout(function() { $(this).removeClass("tr-over"); });
+      // наведение на карты
+  $(".djambaRemow").mouseover(function() { $(this).addClass("shadowHowerCard"); });
+  $(".djambaRemow").mouseout(function() { $(this).removeClass("shadowHowerCard"); });
 
 
 // переключатель языка

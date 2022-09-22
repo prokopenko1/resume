@@ -6,28 +6,29 @@
 
 /* фон карты */
 body {
-  background: url('../jpg/body.png') no-repeat center center fixed;
-  background-size: cover;
+  background: radial-gradient(#202066, #474747);
   color: azure;
   }
-
-.card {
-  background: none;
-  border: 4px solid  yellow;
-  border-radius: 20px 0 20px 0;
-  
+/* тень карт */
+  .djambatron .card {
+    background: none;
+    border: 4px solid;
+    border-radius: 25px 0 20px 0;
+     background: url('../jpg/body.png') no-repeat center ;
+    border-color:   rgb(69, 175, 207);
+   filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
+   border-width: 5px;
 }
+/* задний фон фото профиля  */
 div .photoName {
-  height: 70%;
+    height: 70%;
     margin-top: 90px;
     /* background-size: cover; */
-    /* background: url('../jpg/1516264669525.jpg') no-repeat center ; */
+    background: url('../jpg/body.png') no-repeat center ;
     /* background-size: 100%; */
-    color: azure;
-    /* border-left: 3px solid  yellow;
-    border-bottom: 3px solid  yellow; */
-    
+    color: azure;  
 }
+/* фото профиля */
 .photoName img {
      border-radius: 50%;
      border-color:   rgb(99, 96, 96);
@@ -63,13 +64,21 @@ div .photoName {
   display: none;
   color: #fff0ff;
     }
+/* выравнивание текста  */
  p {
   text-align: justify;
  }   
 
- /* стиль при наведении */
+ /* стиль при наведении ссылок */
  .tr-over {
-  background-color:azure;
-  
-  
-}
+  border-color: azure;
+  /* border-style: solid; */
+  /* border-width: 2px;
+  border-radius: 3px; */
+  box-shadow: 8px 6px 4px rgba(240, 255, 255, 0.521);
+   }
+
+  /* наведение на карты */
+ .shadowHowerCard {
+        filter: drop-shadow(16px 16px 20px rgb(240, 255, 255));
+      }
