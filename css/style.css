@@ -21,7 +21,7 @@ body {
 }
 /* задний фон фото профиля  */
 div .photoName {
-    height: 70%;
+    
     margin-top: 90px;
     /* background-size: cover; */
     background: url('../jpg/body.png') no-repeat center ;
@@ -81,4 +81,11 @@ div .photoName {
   /* наведение на карты */
  .shadowHowerCard {
         filter: drop-shadow(16px 16px 20px rgb(240, 255, 255));
+      }
+
+      .borerStylejambatron {
+        border-color: rgb(69, 175, 207);
+        border-width: 5px;
+        border-style: solid;
+        /* filter: drop-shadow(16px 16px 20px rgb(99, 96, 96)); */
       }
