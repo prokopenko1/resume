@@ -5,11 +5,12 @@
 } */
 
 /* фон карты */
-body {
+body{
   background: radial-gradient(#202066, #474747);
   color: azure;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
+  
   
   }
 /* тень карт */
@@ -21,13 +22,12 @@ body {
     min-height: 100%;
      background: url('../jpg/body.png') no-repeat;
      background-size: cover;
-    border-color:   rgb(69, 175, 207);
-   filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
+    border-color:   azure;
+    filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
    border-width: 5px;
 }
 /* задний фон фото профиля  */
 div .photoName {
-    
     margin-top: 90px;
     background-size: cover;
     background: url('../jpg/body.png') no-repeat center ;
@@ -77,29 +77,35 @@ div .photoName {
 
  /* стиль при наведении ссылок */
  .tr-over {
-  border-color: azure;
-  /* border-style: solid; */
-  /* border-width: 2px;
-  border-radius: 3px; */
-  box-shadow: 8px 6px 4px rgba(240, 255, 255, 0.521);
+    box-shadow: 3px 3px 2px rgba(240, 255, 255, 0.521);
+    background-color: rgb(51, 51, 51);
+    color: azure;
+    border: none;
+    
    }
-
+   /* .a-over {
+    border:1px solid azure;
+    border-radius: 50%;
+    
+   } */
   /* наведение на карты */
  .shadowHowerCard {
         filter: drop-shadow(16px 16px 20px rgb(240, 255, 255));
       }
 
   .borerStylejambatron {
-        border-color: rgb(69, 175, 207);
         border-width: 5px;
         border-style: solid;
-        /* filter: drop-shadow(16px 16px 20px rgb(99, 96, 96)); */
+        border-color:   rgb(99, 96, 96);
+        filter: drop-shadow(16px 16px 20px rgb(99, 96, 96));
+    
       }
 
 input  {
   background-color: azure;
   font-weight: bold;
   color: black;
+  border-radius: 50%;
 }
 .navbar-toggler {
   color: azure;
@@ -113,12 +119,18 @@ input  {
   border-color: azure;
   background-color: azure;
 } */
-.bodyhobbi {
-  background: linear-gradient(rgb(0, 0, 0) 60%, rgb(0, 13, 194));
+.bodyhobbi  {
+  min-height: 100%;
+  background: url('../jpg/body.png') no-repeat center ;
   border-color: azure;
-  border-width: 2px;
+  border-width: 4px;
   border-style: solid;
   border-radius: 5px;
-  
-  
+  backdrop-filter: blur(8px);
+ 
 }
+/* .active {
+  color: azure;
+  font-style: italic;
+
+} */

@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 
 // ховер для карт
-$( ".card-img-top" ).hover(function() {
+$( ".card-hover-effect" ).hover(function() {
   $(this).css("opacity","0.6");
   $(this).css("transition","all 1s ease 0s");
     },function(){
@@ -42,8 +42,8 @@ $(function (){
   });  
 
     // наведение на иконки хедера
-  $(".rus, .eng, .ua").mouseover(function() { $(this).addClass("tr-over"); });
-  $(".rus, .eng, .ua").mouseout(function() { $(this).removeClass("tr-over"); });
+  // $("a").mouseover(function() { $(this).addClass("a-over"); });
+  // $("a").mouseout(function() { $(this).removeClass("a-over"); });
       // наведение на карты
   $(".djambaRemow").mouseover(function() { $(this).addClass("shadowHowerCard"); });
   $(".djambaRemow").mouseout(function() { $(this).removeClass("shadowHowerCard"); });
@@ -84,7 +84,7 @@ $(function (){
       mySkills: 'Мои навыки',
       frontEnd: 'HTML, CSS, JavaScript, GitHub. <br/> jQuery, Bootstrap. <br/> Начал изучать React.js.',
       personal: 'Личные качества',
-      qualities: 'Стресоустойчивость ОтветственностУмение работать в команде',
+      qualities: 'Стресоустойчивость Ответственност Умение работать в команде',
       languageMe: 'Знание языков',
       skillsLanguage: 'Украинский - родной язык. <br> Русский - второй родной язык. <br> Английский(изучаю) - beginner 2',
       skillDriver: 'Вождение',
@@ -114,13 +114,13 @@ $(function (){
       aboutMe: 'A little bit about yourself',
       infoOne: "It's never too late to learn and discover something new! Time flies so that you can not understand what happened. As a child, I dreamed of becoming a programmer, but went into law. This job did not bring me pleasure, and I decided to fulfill my childhood dream and try myself in IT. I liked the specialty of the frontender. Gradually, I began to study layout, JavaScript, the Bootstrap framework and the jQuery library. Technology moves forward and you have to puff. I am currently learning React.js.",
       mySkills: 'My skills',
-      frontEnd: 'HTML, CSS, JavaScript, GitHub. jQuery, Bootstrap. Started learning React.js.',
+      frontEnd: 'HTML, CSS, JavaScript, GitHub.\njQuery, Bootstrap.\nStarted learning React.js.',
       personal: 'Personal qualities',
-      qualities: 'Stress resistance \n\ Responsibility \n\ Ability to work in a team',
+      qualities: 'Stress resistance. Responsibility. Ability to work in a team',
       languageMe: 'Language skills',
-      skillsLanguage: 'Ukrainian is my native language. <br> Russian is my second native language. <br> English (learning) - beginner 2',
+      skillsLanguage: 'Ukrainian is my native language. \n Russian is my second native language. \n English (learning) - beginner 2',
       skillDriver: 'Driving',
-      cardDriver:'Driving license(categories):<br> A, B, C, C<sub>1</sub>.',
+      cardDriver:'Driving license(categories):A, B, C, C<sub>/1</sub>.',
       hobbies: "Let's talk about hobbies",
       whatIdo: 'What do I do in my free time',
       whatDoing: 'Each of us has our favorite pastime, and maybe even more than one. Ideally, when work and interests coincide, but this is not always the case. In my free time, I travel. It is not always some new country. Considering the current “SITUATION”, this is almost impossible, but life does not stop there. I like Japanese cuisine, and I decided to try to cook something myself) and it turned out. Extreme sports bring a lot of emotions, and you want more and more). This was one of the inspirations to make a website in this direction. I hope my new attraction becomes my new job). All obstacles are overcome! The main desire.',
@@ -175,14 +175,19 @@ $(function (){
  };
 
   // якорные сслыки
-  $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top -70; //-70px это у меня приклеиное меню, если подскажите как якоря сдлеать -70px, буду признателен
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
+  
+  $("input").click(function(event) {
+    event.preventDefault();
+    $("input").removeClass('tr-over');
+    $(this).addClass('tr-over');
+  });
+
+  $(".nav-item a").click(function(e) {
+   
+    $(".nav-item a").removeClass('active');
+    $(this).addClass('active');
+  });
+
   });
 
  
