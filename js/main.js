@@ -103,7 +103,9 @@ $(function (){
       tolkExtrym: 'Эмоции должны быть разные. Не всем подходит, но мне нравится. Главное – безопасность! И все возможно!',
       conectWhithMe: 'Связаться со мной',
       aboutMeNav: 'Обо мне',
-      myWork: 'Моя верстка'
+      myWork: 'Моя верстка',
+      whatIToDo:'Где я работал',
+      myLifeWork:'Начинал работать еще в студенческие годы. Но это была больше подработка. Начинал работать курьером. Здесь, я получил огромны опыт  в вождении. Я считаю, что это не менее важно в жизни. В это время у меня появился интерес к японской кухни.  Я по вечерам , взамен на опыт, начал учиться в японском ресторане.  Позже меня пригласили на работу в нем. После завершения учебы в институте, я начал пробовать себя в области права. Недолго проработав, я разочаровался в моем выборе профессии и пошел в гуманитарную организацию по разминированию. Проработав в ней, я забыл, что такое личная жизнь. Постоянные командировки на протяжении года начали сказываться на мне. Родных и близких видел 1-2 раза в месяц.  После этого решил поискать работу по месту жительства.  Хотелось получать хороший доход рядом с домом и приятный коллектив. Но не все так просто. Подвернулось место администратора.  Работа, по своему , интересна, неплохой заработок, но без развития и карьерного роста. Немного подумав, я решил попробовать себя в верстке. Начал изучать базу. Я заинтересовался.  В скором времени все получится. О своих навыках  и качествах могу сказать, что я коммуникабелен и могу работать в команде. Ответственность и стараться делать все вовремя мне привили еще в детстве. С этим у меня не было проблем никогда.  Пунктуальный. Стараюсь правильно распределять время для выполнения поставленных задач.'
 
    };
    var eng = {
@@ -133,7 +135,10 @@ $(function (){
       tolkExtrym: 'Emotions must be different. Not for everyone, but I like it. The main thing is safety! And everything is possible!',
       conectWhithMe: 'Contact with me',
       aboutMeNav: 'About me',
-      myWork: 'My layout'
+      myWork: 'My layout',
+      whatIToDo:'Where did I work',
+      myLifeWork:"He started working as a student. But it was more of a side job. Started working as a courier. Here, I got tremendous experience in driving. I believe that this is no less important in life. During this time, I developed an interest in Japanese cuisine. In the evenings, in exchange for experience, I began to study at a Japanese restaurant. Later I was invited to work in it. After completing my studies at the institute, I began to try myself in the field of law. After a short period of work, I became disillusioned with my choice of profession and joined a humanitarian demining organization. Having worked in it, I forgot what personal life is. Constant business trips throughout the year began to affect me. I saw relatives and friends 1-2 times a month. After that, I decided to look for a job at the place of residence. I wanted to get a good income close to home and a nice team. But not everything is so simple. The place of the administrator turned up. The work, in its own way, is interesting, good earnings, but without development and career growth. After some thought, I decided to try my hand at layout. Started learning the base. I became interested. Everything will work out soon. I can say about my skills and qualities that I am sociable and can work in a team. Responsibility and trying to do everything on time were instilled in me as a child. I never had any problems with this. Punctual. I try to properly allocate time to complete the tasks."
+
 
       
    };
@@ -164,10 +169,21 @@ $(function (){
       tolkExtrym: 'Емоції мають бути різні. Не всім підходить, але мені подобається. Головне – безпека! І все можливе!',
       conectWhithMe: "Зв'язатися зі мною",
       aboutMeNav: 'Про мене',
-      myWork: 'Моя верстка'
-
-
+      myWork: 'Моя верстка',
+      whatIToDo:'Де я працював',
+      myLifeWork:"Починав працювати ще у студентські роки. Але це було більше підробітку. Починав працювати кур'єром. Тут, я отримав великий досвід у веденні. Я вважаю, що це не менш важливе в житті. У цей час у мене виник інтерес до японської кухні. Я вечорами, замість досвіду, почав вчитися в японському ресторані. Пізніше мене запросили на роботу у ньому. Після закінчення навчання в інституті я почав пробувати себе в галузі права. Недовго пропрацювавши, я розчарувався у моєму виборі професії та пішов до гуманітарної організації з розмінування. Пропрацювавши в ній, я забув, що таке особисте життя. Постійні відрядження протягом року почали позначатися на мені. Рідних та близьких бачив 1-2 рази на місяць.Після цього вирішив пошукати роботу за місцем проживання. Хотілося отримувати гарний дохід поряд із будинком та приємний колектив. Але не все так просто. Навернулося місце адміністратора. Робота, по-своєму, цікава, непоганий заробіток, але без розвитку та кар'єрного зростання. Трохи подумавши, я вирішив спробувати себе у верстці. Почав вивчати базу. Я зацікавився. Незабаром все вийде. Про свої навички та якості можу сказати, що я комунікабельний і можу працювати в команді. Відповідальність і намагатися робити все вчасно прищепили мені ще в дитинстві. Із цим у мене не було проблем ніколи. Пунктуальний. Намагаюся правильно розподіляти час виконання поставлених завдань."
  };
+
+  // якорные сслыки
+  $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top -70; //-70px это у меня приклеиное меню, если подскажите как якоря сдлеать -70px, буду признателен
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
   });
 
+ 
  

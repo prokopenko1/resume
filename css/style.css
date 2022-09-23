@@ -8,6 +8,9 @@
 body {
   background: radial-gradient(#202066, #474747);
   color: azure;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
   }
 /* тень карт */
   .djambatron .card {
@@ -96,6 +99,7 @@ div .photoName {
 input  {
   background-color: azure;
   font-weight: bold;
+  color: black;
 }
 .navbar-toggler {
   color: azure;
@@ -109,3 +113,12 @@ input  {
   border-color: azure;
   background-color: azure;
 } */
+.bodyhobbi {
+  background: linear-gradient(rgb(0, 0, 0) 60%, rgb(0, 13, 194));
+  border-color: azure;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  
+  
+}

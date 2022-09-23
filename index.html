@@ -26,7 +26,7 @@
           <a class="navbar-brand wow pulse" data-wow-iteration="7" href="mailto:prokopenkoevgeniy123@gmail.com"><img src="jpg/email.svg" width="30" height="30" alt="ссылка профиля email"></a>
           
           <!-- бургер -->
-          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" width="30" height="30">
+          <button class="navbar-toggler " id='menu' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" width="30" height="30">
             <span class="navbar-toggler-icon"  width="30" height="30"></span>
           </button>
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
@@ -37,16 +37,16 @@
             <div class="offcanvas-body ">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active localization" caption='aboutMeNav' aria-current="page" href="#">Обо мне</a>
+                    <a class="nav-link active localization" caption='aboutMeNav' aria-current="page" href="#aboutMe">Обо мне</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link localization" caption='mySkills' aria-current="page" href="#">Мои нывыки</a>
+                  <a class="nav-link localization" caption='mySkills' aria-current="page" href="#mySkills">Мои нывыки</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link localization" caption='hob' href="#">Хобби</a>
+                  <a class="nav-link localization" caption='hob' href="#muHobbies">Хобби</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link localization" caption='conectWhithMe' href="#">Связаться со мной</a>
+                    <a class="nav-link localization" caption='conectWhithMe' href="#contactMe">Связаться со мной</a>
                   </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle localization" caption='myWork' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,7 +94,7 @@
         </div>
         <!-- навыки -->
         
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-5" id='mySkills'>
         <h2 class="wow bounceIn localization" caption='mySkills'>Мои навыки</h2>
         </div>
           <div class="row row-cols-1 row-cols-md-4 g-4 mt-2 djambatron  ">
@@ -142,7 +142,7 @@
             </div>
           </div>
            <!-- джамбатрон -->
-        <div class="mt-5">
+        <div class="mt-5" id="muHobbies">
           <h2 class="localization" caption='hobbies'>Поговорим о хобби</h2>
           <div class="mt-4 p-4 bg-dark text-white rounded djambaRemow borerStylejambatron">
             <h1 class="localization" caption='whatIdo'>Чем я занимаюсь в свободное время</h1> 
@@ -155,11 +155,11 @@
           <div class="row text-center mt-5">
             <h2 class="localization" caption='hob'>Хобби</h2>
           </div>
-          <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
-             <div class="col">
-              <div class="card">
+          <div class="row row-cols-1 row-cols-md-4 g-4 mt-2 ">
+             <div class="col ">
+              <div class="card bodyhobbi ">
                 <img src="jpg/sushi.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body ">
                   <h5 class="card-title localization" caption='japon'>Японская кухня</h5>
                   <p class="card-text localization" caption='japonKitchen'>Кто не любит японскую кухню?) Вот и я о том же. В свободное время, на праздники и в обычное время
                     мне нравится готовить суши и роллы. </p>
@@ -167,9 +167,9 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
+              <div class="card bodyhobbi">
                 <img src="jpg/daiving.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body ">
                   <h5 class="card-title localization" caption='daiving'>Дайвинг</h5>
                   <p class="card-text localization" caption='dip'>Побывавши на море или озере, думаю,  каждый из нас брал маску 
                     и пытался  что-то разглядеть под водой.
@@ -178,9 +178,9 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
+              <div class="card bodyhobbi">
                 <img src="jpg/piramid.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body ">
                   <h5 class="card-title localization" caption='travel'>Путишествие</h5>
                   <p class="card-text localization" caption='goTravel'>Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествием!
                     
@@ -189,9 +189,9 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
+              <div class="card bodyhobbi">
                 <img src="jpg/bike.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body ">
                   <h5 class="card-title localization" caption='xtreme'>Экстрим</h5>
                   <p class="card-text">Эмоции должны быть разные. Не всем подходит, но мне нравится. Главное – безопасность! И все возможно!
                     
@@ -200,6 +200,14 @@
               </div>
             </div>
           </div>
+                  <!-- джамбатрон -->
+        <div class="mt-5" id="aboutMe">
+          <h2 class="localization" caption='aboutMeNav'>Обо мне</h2>
+          <div class="mt-4 p-4 bg-dark text-white rounded djambaRemow borerStylejambatron">
+            <h1 class="localization" caption='whatIToDo'>Где я работал</h1> 
+            <p class="localization" caption='myLifeWork'>Начинал работать еще в студенческие годы. Но это была больше подработка. Начинал работать курьером. Здесь, я получил огромны опыт  в вождении. Я считаю, что это не менее важно в жизни. В это время у меня появился интерес к японской кухни.  Я по вечерам , взамен на опыт, начал учиться в японском ресторане.  Позже меня пригласили на работу в нем. После завершения учебы в институте, я начал пробовать себя в области права. Недолго проработав, я разочаровался в моем выборе профессии и пошел в гуманитарную организацию по разминированию. Проработав в ней, я забыл, что такое личная жизнь. Постоянные командировки на протяжении года начали сказываться на мне. Родных и близких видел 1-2 раза в месяц.  После этого решил поискать работу по месту жительства.  Хотелось получать хороший доход рядом с домом и приятный коллектив. Но не все так просто. Подвернулось место администратора.  Работа, по своему , интересна, неплохой заработок, но без развития и карьерного роста. Немного подумав, я решил попробовать себя в верстке. Начал изучать базу. Я заинтересовался.  В скором времени все получится. О своих навыках  и качествах могу сказать, что я коммуникабелен и могу работать в команде. Ответственность и стараться делать все вовремя мне привили еще в детстве. С этим у меня не было проблем никогда.  Пунктуальный. Стараюсь правильно распределять время для выполнения поставленных задач.</p> 
+          </div>
+        </div>
           <!-- scrool -->
           <div  class="d-flex justify-content-end mt-5 ">
                 <p id="back-top" class="d-flex justify-content-end">
@@ -210,10 +218,10 @@
     
       
     <footer class=" position-sticky top-100 ">
-      <div class="d-flex justify-content-between p-1 text-center " >
-        <div class="col-4 flex-fill "><a href=""><img src="jpg/linkedinn.svg" alt=""></a></div>
-        <div class="col-4 flex-fill mx-auto"><a href=""><img src="jpg/facebookkk.svg" alt=""></a></div>
-        <div class="col-4 flex-fill mx-auto"><a href=""><img src="jpg/email.svg" alt=""></a></div>
+      <div class="d-flex justify-content-between p-1 text-center " id="contactMe">
+        <div class="col-4 flex-fill "><a href=""><img src="jpg/linkedinn.svg" width="30" height="30" alt=""></a></div>
+        <div class="col-4 flex-fill mx-auto"><a href=""><img src="jpg/facebookkk.svg" width="30" height="30" alt=""></a></div>
+        <div class="col-4 flex-fill mx-auto"><a href="mailto:prokopenkoevgeniy123@gmail.com"><img src="jpg/email.svg"width="30" height="30" alt=""></a></div>
       </div>
    </footer>
     <script src="js/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
