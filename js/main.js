@@ -42,8 +42,8 @@ $(function (){
   });  
 
     // наведение на иконки хедера
-  $(".navbar-brand").mouseover(function() { $(this).addClass("tr-over"); });
-  $(".navbar-brand").mouseout(function() { $(this).removeClass("tr-over"); });
+  $(".rus, .eng, .ua").mouseover(function() { $(this).addClass("tr-over"); });
+  $(".rus, .eng, .ua").mouseout(function() { $(this).removeClass("tr-over"); });
       // наведение на карты
   $(".djambaRemow").mouseover(function() { $(this).addClass("shadowHowerCard"); });
   $(".djambaRemow").mouseout(function() { $(this).removeClass("shadowHowerCard"); });
@@ -75,7 +75,7 @@ $(function (){
  });
 
 
-
+// для превода
    var rus = {
       life: 'Жизненный опыт',
       name: 'Привет! Меня зовут Евгений',
@@ -83,7 +83,12 @@ $(function (){
       infoOne: 'Учиться и открывать для себя что-то новое никогда не поздно! Время летит так, что можно и не понять что произошло. В детстве я мечтал стать программистом, но пошел в юриспруденцию. Эта работа мне не приносила удовольствия, и я решил осуществить свою детскую мечту и попробовать себя в IT. Приглянулась специальность фронтендера. Постепенно начал изучать верстку, JavaScript , фрейморк Bootstrap и библиотеку jQuery. Технологии идут вперед и приходится пыхтеть. На даный момент изучаю React.js.',
       mySkills: 'Мои навыки',
       frontEnd: 'HTML, CSS, JavaScript, GitHub. <br/> jQuery, Bootstrap. <br/> Начал изучать React.js.',
-
+      personal: 'Личные качества',
+      qualities: 'Стресоустойчивость ОтветственностУмение работать в команде',
+      languageMe: 'Знание языков',
+      skillsLanguage: 'Украинский - родной язык. <br> Русский - второй родной язык. <br> Английский(изучаю) - beginner 2',
+      skillDriver: 'Вождение',
+      cardDriver:'Водительское удостоверение(категории):<br> A,  B, C, C<sub>1</sub>.',
       hobbies: 'Поговорим о хобби',
       whatIdo: 'Чем я занимаюсь в свободное время',
       whatDoing: 'У каждого из нас есть свое любимое занятие,  и может быть даже не одно. Идеальный вариант, когда работа и интересы совпадают, но это не всегда так. В свое свободное время я путешествую. Это не всегда какая-то новая страна. Учитывая нынешнюю «ОБСТАНОВКУ» это практически невозможно, но жизнь на этом не останавливается.  Мне нравится японская кухня ,и я решил попробовать сам что-то приготовить) и получилось.  Экстремальные виды спорта приносят уйму эмоций, и хочется  еще, и еще). Это и стало одним из вдохновений сверстать сайт в этом направлении.  Надеюсь мое новое влечение станет моей новой работой). Все преграды преодолимы! Главное – ЖЕЛАНИЕ.',
@@ -93,7 +98,12 @@ $(function (){
       daiving: 'Дайвинг',
       dip: 'Побывавши на море или озере, думаю,  каждый из нас брал маску и пытался  что-то разглядеть под водой.',
       travel: 'Путишествие',
-      goTravel: 'Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествием!'
+      goTravel: 'Не говорите, что никто не любит путешествовать!!! Даже поход в магазин можно назвать путешествием!',
+      xtreme: 'Экстрим',
+      tolkExtrym: 'Эмоции должны быть разные. Не всем подходит, но мне нравится. Главное – безопасность! И все возможно!',
+      conectWhithMe: 'Связаться со мной',
+      aboutMeNav: 'Обо мне',
+      myWork: 'Моя верстка'
 
    };
    var eng = {
@@ -102,9 +112,13 @@ $(function (){
       aboutMe: 'A little bit about yourself',
       infoOne: "It's never too late to learn and discover something new! Time flies so that you can not understand what happened. As a child, I dreamed of becoming a programmer, but went into law. This job did not bring me pleasure, and I decided to fulfill my childhood dream and try myself in IT. I liked the specialty of the frontender. Gradually, I began to study layout, JavaScript, the Bootstrap framework and the jQuery library. Technology moves forward and you have to puff. I am currently learning React.js.",
       mySkills: 'My skills',
-      frontEnd: 'HTML, CSS, JavaScript, GitHub. <br/> jQuery, Bootstrap. <br/> Started learning React.js.',
-      
-
+      frontEnd: 'HTML, CSS, JavaScript, GitHub. jQuery, Bootstrap. Started learning React.js.',
+      personal: 'Personal qualities',
+      qualities: 'Stress resistance \n\ Responsibility \n\ Ability to work in a team',
+      languageMe: 'Language skills',
+      skillsLanguage: 'Ukrainian is my native language. <br> Russian is my second native language. <br> English (learning) - beginner 2',
+      skillDriver: 'Driving',
+      cardDriver:'Driving license(categories):<br> A, B, C, C<sub>1</sub>.',
       hobbies: "Let's talk about hobbies",
       whatIdo: 'What do I do in my free time',
       whatDoing: 'Each of us has our favorite pastime, and maybe even more than one. Ideally, when work and interests coincide, but this is not always the case. In my free time, I travel. It is not always some new country. Considering the current “SITUATION”, this is almost impossible, but life does not stop there. I like Japanese cuisine, and I decided to try to cook something myself) and it turned out. Extreme sports bring a lot of emotions, and you want more and more). This was one of the inspirations to make a website in this direction. I hope my new attraction becomes my new job). All obstacles are overcome! The main desire.',
@@ -114,7 +128,12 @@ $(function (){
       daiving: 'Diving',
       dip: 'Having visited the sea or the lake, I think each of us took a mask and tried to see something under the water.',
       travel: 'Travel',
-      goTravel: 'Do not say no one likes to travel!!! Even going to the store can be called a journey!'
+      goTravel: 'Do not say no one likes to travel!!! Even going to the store can be called a journey!',
+      xtreme: 'Extreme',
+      tolkExtrym: 'Emotions must be different. Not for everyone, but I like it. The main thing is safety! And everything is possible!',
+      conectWhithMe: 'Contact with me',
+      aboutMeNav: 'About me',
+      myWork: 'My layout'
 
       
    };
@@ -124,8 +143,13 @@ $(function (){
       aboutMe: 'Трохи про себе',
       infoOne: 'Вчитися та відкривати для себе щось нове ніколи не пізно! Час летить так, що можна і не зрозуміти, що сталося. У дитинстві мріяв стати програмістом, але пішов у юриспруденцію. Ця робота мені не приносила задоволення, і я вирішив здійснити свою дитячу мрію та спробувати себе в ІТ. Сподобалася спеціальність фронтендера. Поступово почав вивчати верстку, JavaScript, фрейморк Bootstrap та бібліотеку jQuery. Технології йдуть вперед і доводиться пихкати. На даний момент вивчаю React.js.',
       mySkills: 'Мої навички',
-      frontEnd: 'HTML, CSS, JavaScript, GitHub. <br/> jQuery, Bootstrap.  <br/>  Почав вивчати React.js.',
-
+      frontEnd: 'HTML, CSS, JavaScript, GitHub. jQuery, Bootstrap. Почав вивчати React.js.',
+      personal: 'Особисті якості',
+      qualities: 'Стресостійкість Відповідальність Уміння працювати в команді',
+      languageMe: 'Знання мов',
+      skillsLanguage: 'Українська – рідна мова. <br> Українська - друга рідна мова. <br> Англійська(вивчаю) - beginner 2',
+      skillDriver: 'Водіння',
+      cardDriver:'Посвідчення водія(категорії):<br> A, B, C, C<sub>1</sub>.',
       hobbies: 'Поговоримо про хобі',
       whatIdo: 'Чим я займаюся у вільний час',
       whatDoing: 'У кожного з нас є своє улюблене заняття і може бути навіть не одне. Ідеальний варіант, коли робота та інтереси збігаються, але це не завжди так. У свій вільний час я мандрую. Це не завжди якась нова країна. Враховуючи нинішню «ОБСТАНОВКУ», це практично неможливо, але життя на цьому не зупиняється. Мені подобається японська кухня і я вирішив спробувати сам щось приготувати) і вийшло. Екстремальні види спорту приносять безліч емоцій, і хочеться ще, і ще). Це і стало одним із натхнень згорнути сайт у цьому напрямку. Сподіваюся мій новий потяг стане моєю новою роботою). Всі перешкоди переборні! Головне бажання.',
@@ -135,7 +159,12 @@ $(function (){
       daiving: 'Дайвінг',
       dip: 'Побувавши на морі чи озері, думаю, кожен із нас брав маску і намагався щось розгледіти під водою.',
       travel: 'Подорож',
-      goTravel: 'Не кажіть, що ніхто не любить подорожувати! Навіть похід у магазин можна назвати подорожжю!'
+      goTravel: 'Не кажіть, що ніхто не любить подорожувати! Навіть похід у магазин можна назвати подорожжю!',
+      xtreme: 'Екстрiм',
+      tolkExtrym: 'Емоції мають бути різні. Не всім підходить, але мені подобається. Головне – безпека! І все можливе!',
+      conectWhithMe: "Зв'язатися зі мною",
+      aboutMeNav: 'Про мене',
+      myWork: 'Моя верстка'
 
 
  };

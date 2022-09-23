@@ -86,9 +86,26 @@ div .photoName {
         filter: drop-shadow(16px 16px 20px rgb(240, 255, 255));
       }
 
-      .borerStylejambatron {
+  .borerStylejambatron {
         border-color: rgb(69, 175, 207);
         border-width: 5px;
         border-style: solid;
         /* filter: drop-shadow(16px 16px 20px rgb(99, 96, 96)); */
       }
+
+input  {
+  background-color: azure;
+  font-weight: bold;
+}
+.navbar-toggler {
+  color: azure;
+  border-color: azure;
+  border-width: 1px;
+  border-style: solid;
+}
+/* знакчек закрытия navbar */
+/* .clorCloss {
+  color: azure;
+  border-color: azure;
+  background-color: azure;
+} */

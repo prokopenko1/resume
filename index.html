@@ -19,25 +19,25 @@
     <nav class="navbar navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
       
-<input class='rus' type=button value='rus'>
-<input class='eng' type=button value='eng'>
-<input class='ua' type=button value='ua'>
+<input class='rus wow pulse' data-wow-iteration="7" type=button value='ru' width="30" height="30">
+<input class='eng wow pulse' data-wow-iteration="7" type=button value='en' width="30" height="30">
+<input class='ua wow pulse' data-wow-iteration="57" type=button value='ua' width="30" height="30">
+          <a class="navbar-brand wow pulse" data-wow-iteration="7" href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE-167082249/"><img src="jpg/linkedinn.svg" width="30" height="30" alt="ссылка профиля linkedin"></a>
+          <a class="navbar-brand wow pulse" data-wow-iteration="7" href="mailto:prokopenkoevgeniy123@gmail.com"><img src="jpg/email.svg" width="30" height="30" alt="ссылка профиля email"></a>
           
-          <a class="navbar-brand wow pulse" data-wow-iteration="5" href="mailto:prokopenkoevgeniy123@gmail.com"><img src="jpg/email.svg" width="30" height="30" alt="ссылка профиля facebook"></a>
-          <a class="navbar-brand wow pulse" data-wow-iteration="5" href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE-167082249/"><img src="jpg/linkedinn.svg" width="30" height="30" alt="ссылка профиля linkedin"></a>
           <!-- бургер -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" width="30" height="30">
+            <span class="navbar-toggler-icon"  width="30" height="30"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Обо мне</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
+            <div class="offcanvas-header ">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Title</h5>
+              <button type="button" class="btn-close clorCloss" data-bs-dismiss="offcanvas" aria-label="Close"  width="30" height="30"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body ">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Обо мне</a>
+                    <a class="nav-link active localization" caption='aboutMeNav' aria-current="page" href="#">Обо мне</a>
                   </li>
                 <li class="nav-item">
                   <a class="nav-link localization" caption='mySkills' aria-current="page" href="#">Мои нывыки</a>
@@ -46,14 +46,14 @@
                   <a class="nav-link localization" caption='hob' href="#">Хобби</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Связаться со мной</a>
+                    <a class="nav-link localization" caption='conectWhithMe' href="#">Связаться со мной</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle localization" caption='myWork' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Моя верстка
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" data-newwindow href="https://prokopenko1.github.io/projekt2/index.html" >Первая работа</a></li>
+                    <li><a class="dropdown-item"  data-newwindow href="https://prokopenko1.github.io/projekt2/index.html" >Первая работа</a></li>
                     <li> 
                         <hr class="dropdown-divider">
                     </li>
@@ -115,8 +115,8 @@
               <div class="card wow bounceIn" >
                 <img src="jpg/Pngtre.png" class="card-img-top djambaRemow" alt="...">
                 <div class="card-body ">
-                  <h5 class="card-title">Личные качества</h5>
-                  <p class="card-text">Стресоустойчивость<br>Ответственность<br>Умение работать в команде
+                  <h5 class="card-title localization" caption='personal'>Личные качества</h5>
+                  <p class="card-text localization" caption='qualities'>Стресоустойчивость<br>Ответственность<br>Умение работать в команде
                   </p>
                 </div>
               </div>
@@ -125,8 +125,8 @@
               <div class="card wow bounceIn" >
                 <img src="jpg/language.png" class="card-img-top djambaRemow" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Знание языков</h5>
-                  <p class="card-text">Украинский - родной язык. <br> Русский - второй родной язык. <br> Английский(изучаю) - beginner 2</p>
+                  <h5 class="card-title localization" caption='languageMe'>Знание языков</h5>
+                  <p class="card-text localization" caption='skillsLanguage'>Украинский - родной язык. <br> Русский - второй родной язык. <br> Английский(изучаю) - beginner 2</p>
                 </div>
               </div>
             </div>
@@ -134,8 +134,8 @@
               <div class="card wow bounceIn">
                 <img src="jpg/driver.png" class="card-img-top djambaRemow" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title ">Вождение</h5>
-                  <p class="card-text">Водительское удостоверение(категории):<br> A,  B, C, C<sub>1</sub>.
+                  <h5 class="card-title localization" caption='skillDriver'>Вождение</h5>
+                  <p class="card-text localization" caption='cardDriver'>Водительское удостоверение(категории):<br> A,  B, C, C<sub>1</sub>.
                   </p>
                 </div>
               </div>
@@ -192,8 +192,8 @@
               <div class="card">
                 <img src="jpg/bike.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Экстрим</h5>
-                  <p class="card-text">Эмоции должны быть разные. Не всем подходит , но мне нравится. Главное – безопасность! И все возможно!
+                  <h5 class="card-title localization" caption='xtreme'>Экстрим</h5>
+                  <p class="card-text">Эмоции должны быть разные. Не всем подходит, но мне нравится. Главное – безопасность! И все возможно!
                     
                   </p>
                 </div>
