@@ -2,8 +2,8 @@ $(document).ready(function(){
     
     // прелоаdер
     $(window).on('load', function () {
-        $(".preloader_image").fadeOut(4500);
-        $(".preloader").delay(3300).fadeOut("slow");
+        $(".preloader_image").fadeOut(3500);
+        $(".preloader").delay(2300).fadeOut("slow");
     });
     
            // открываем ссылку в новом окне по атрибуту
